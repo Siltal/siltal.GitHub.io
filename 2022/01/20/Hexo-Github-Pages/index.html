@@ -24,7 +24,7 @@
 <meta property="og:description" content="Hexo + Github PagesSign in Github If you already have a Github account, you can skip this part   open https:&#x2F;&#x2F;github.com&#x2F; Click the Sign up button in the upper right corner  Setup NodeJS EnvironmentDo">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-20T08:32:07.000Z">
-<meta property="article:modified_time" content="2022-01-20T10:51:06.005Z">
+<meta property="article:modified_time" content="2022-01-20T11:04:01.254Z">
 <meta property="article:author" content="Siltal">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -261,14 +261,14 @@
 <h3 id="Config-Git"><a href="#Config-Git" class="headerlink" title="Config Git"></a>Config Git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git config --global user.email <span class="hljs-string">&quot;your@email.com&quot;</span><br>$ git config --global user.name <span class="hljs-string">&quot;Your Name&quot;</span><br></code></pre></td></tr></table></figure>
 
 <h2 id="Create-local-Hexo-directory"><a href="#Create-local-Hexo-directory" class="headerlink" title="Create local Hexo directory"></a>Create local Hexo directory</h2><blockquote>
-<p>Assuming that the local hexo directory is located in <strong>D:/HexoBlog</strong></p>
+<p>Assuming that the local Hexo directory is located in <strong>D:/HexoBlog</strong></p>
 </blockquote>
 <h3 id="Hexo-init-directory"><a href="#Hexo-init-directory" class="headerlink" title="Hexo init directory"></a>Hexo init directory</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">cd</span> D:/HexoBlog<br>$ npm install -g hexo-cli<br>$ npx hexo init .<br>$ npm install<br></code></pre></td></tr></table></figure>
 
 <p>If everything is fine, you will see the following structure</p>
 <figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs sqf">.<br>├── <span class="hljs-variable">_config</span>.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>|   ├── <span class="hljs-variable">_drafts</span><br>|   └── <span class="hljs-variable">_posts</span><br>└── themes<br></code></pre></td></tr></table></figure>
 
-<h3 id="Install-a-theme-for-hexo"><a href="#Install-a-theme-for-hexo" class="headerlink" title="Install a theme for hexo"></a>Install a theme for hexo</h3><p>select one theme on <a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo-themes</a></p>
+<h3 id="Install-a-theme-for-Hexo"><a href="#Install-a-theme-for-Hexo" class="headerlink" title="Install a theme for Hexo"></a>Install a theme for Hexo</h3><p>select one theme on <a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo-themes</a></p>
 <blockquote>
 <p>Assuming that you choose <a target="_blank" rel="noopener" href="https://obsidian.tridiamond.tech/">A-Obsidian</a></p>
 </blockquote>
@@ -294,11 +294,14 @@
 <p>go to the Settings of blog repository.</p>
 <p>find Deploy keys,click <code>Add deploy key</code></p>
 <p>and paste text in here.</p>
-<h3 id="Config-Hexo-Deployment"><a href="#Config-Hexo-Deployment" class="headerlink" title="Config Hexo Deployment"></a>Config Hexo Deployment</h3><p>Install hexo-deployer-git</p>
+<h3 id="Config-Hexo-Deployment"><a href="#Config-Hexo-Deployment" class="headerlink" title="Config Hexo Deployment"></a>Config Hexo Deployment</h3><p>Install Hexo-deployer-git</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm install hexo-deployer-git -g<br></code></pre></td></tr></table></figure>
 
 <p>In _config.yml</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># Deployment</span><br><span class="hljs-comment">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repository:</span> <span class="hljs-string">https://github.com/username/username.github.io</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure>
+<p>Generator static page.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npx hexo g<br></code></pre></td></tr></table></figure>
+
 <p>Final step,deploy</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npx hexo d<br></code></pre></td></tr></table></figure>
 
