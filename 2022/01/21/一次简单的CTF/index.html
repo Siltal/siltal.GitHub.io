@@ -16,20 +16,22 @@
   <meta name="author" content="Siltal">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="工具脚本 凯撒密码1234567def caesar_offset(s, i):    if not -25 &lt;&#x3D; i &lt;&#x3D; 25:        return False    origin &#x3D; map(lambda c: chr((ord(c) - 65 + i) % 26 + 65) if 65 &lt;&#x3D; ord(c) &lt;&#x3D; 90    else chr((ord(c)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2022/01/19/hello-world/index.html">
+<meta property="og:title" content="一次简单的CTF">
+<meta property="og:url" content="http://example.com/2022/01/21/%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84CTF/index.html">
 <meta property="og:site_name" content="Siltal&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="工具脚本 凯撒密码1234567def caesar_offset(s, i):    if not -25 &lt;&#x3D; i &lt;&#x3D; 25:        return False    origin &#x3D; map(lambda c: chr((ord(c) - 65 + i) % 26 + 65) if 65 &lt;&#x3D; ord(c) &lt;&#x3D; 90    else chr((ord(c)">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-19T01:03:51.828Z">
-<meta property="article:modified_time" content="2022-01-19T01:03:51.828Z">
+<meta property="og:image" content="http://example.com/img/131.png">
+<meta property="article:published_time" content="2022-01-21T00:06:42.000Z">
+<meta property="article:modified_time" content="2022-01-21T00:55:53.512Z">
 <meta property="article:author" content="Siltal">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/131.png">
   
   
-  <title>Hello World - Siltal&#39;s Blog</title>
+  <title>一次简单的CTF - Siltal&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -179,7 +181,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hello World">
+            <span class="h2" id="subtitle" title="一次简单的CTF">
               
             </span>
 
@@ -189,8 +191,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-19 09:03" pubdate>
-        January 19, 2022 am
+      <time datetime="2022-01-21 08:06" pubdate>
+        January 21, 2022 am
       </time>
     </span>
   
@@ -200,7 +202,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      367 字
+      719 字
     </span>
   
 
@@ -209,7 +211,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4 分钟
+      6 分钟
     </span>
   
 
@@ -238,22 +240,15 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">一次简单的CTF</h1>
             
             <div class="markdown-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+              <h2 id="工具脚本"><a href="#工具脚本" class="headerlink" title="工具脚本"></a>工具脚本</h2><ul>
+<li>凯撒密码<figure class="highlight python"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">caesar_offset</span>(<span class="hljs-params">s, i</span>):</span><br>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> -<span class="hljs-number">25</span> &lt;= i &lt;= <span class="hljs-number">25</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span><br>    origin = <span class="hljs-built_in">map</span>(<span class="hljs-keyword">lambda</span> c: <span class="hljs-built_in">chr</span>((<span class="hljs-built_in">ord</span>(c) - <span class="hljs-number">65</span> + i) % <span class="hljs-number">26</span> + <span class="hljs-number">65</span>) <span class="hljs-keyword">if</span> <span class="hljs-number">65</span> &lt;= <span class="hljs-built_in">ord</span>(c) &lt;= <span class="hljs-number">90</span><br>    <span class="hljs-keyword">else</span> <span class="hljs-built_in">chr</span>((<span class="hljs-built_in">ord</span>(c) - <span class="hljs-number">97</span> + i) % <span class="hljs-number">26</span> + <span class="hljs-number">97</span>) <span class="hljs-keyword">if</span> <span class="hljs-number">97</span> &lt;= <span class="hljs-built_in">ord</span>(c) &lt;= <span class="hljs-number">122</span><br>    <span class="hljs-keyword">else</span> c, s)<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;&#x27;</span>.join(origin)<br></code></pre></td></tr></table></figure></li>
+<li>base64<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">b64de</span>(<span class="hljs-params">s</span>):</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot; B64 start &quot;</span>.center(<span class="hljs-number">64</span>, <span class="hljs-string">&#x27;-&#x27;</span>))<br>    r = <span class="hljs-string">&quot;&quot;</span><br>    deb64 = base64.b64decode(s)<br>    <span class="hljs-keyword">try</span>:<br>        <span class="hljs-built_in">print</span>(deb64.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br>    <span class="hljs-keyword">except</span>:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\nCantdecode UTF-8&quot;</span>)<br>    <span class="hljs-built_in">print</span>()<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> deb64:<br>        <span class="hljs-built_in">print</span>((<span class="hljs-string">&#x27;%02x&#x27;</span> % i).upper(), end=<span class="hljs-string">&#x27; &#x27;</span>)<br>    <span class="hljs-built_in">print</span>()<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> deb64:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-built_in">chr</span>(i), end=<span class="hljs-string">&#x27;&#x27;</span>)<br>        r += <span class="hljs-built_in">chr</span>(i)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot; B64 stop &quot;</span>.center(<span class="hljs-number">64</span>, <span class="hljs-string">&#x27;-&#x27;</span>))<br>    <span class="hljs-keyword">return</span> r<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="源"><a href="#源" class="headerlink" title="源"></a>源</h2><p><img src="/img/131.png" srcset="/img/loading.gif" lazyload alt="源"><br>+<br><a target="_blank" rel="noopener" href="http://tools.jb51.net/aideddesign/img_add_info/">图片隐写术</a><br>=</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs txt">hJBCY1PhUCHoSBj6EpFoiJrbSMFuEL5YWAu0VCnMEqdjjfqcCIvbZYyqhYE2Qq0QIqO5SW==<br><br>ks6w!<br></code></pre></td></tr></table></figure>
 
             </div>
             <hr>
@@ -274,15 +269,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/01/20/Hexo-Github-Pages/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hexo + Github Pages</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/01/20/Hexo-Github-Pages/">
+                        <span class="hidden-mobile">Hexo + Github Pages</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -304,7 +299,7 @@
         var options = Object.assign(
           {"clientID":"dd46baf0acd135016af9","clientSecret":"282de20f0710f518fb76c83d798f610edaf851fc","repo":"siltal.Github.io","owner":"Siltal","admin":["siltal"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: 'b74050cc167738a0c21fd549bcea9ff0'
+            id: '85dfcc421c4f934993899c3d83419684'
           }
         )
         var gitalk = new Gitalk(options);
