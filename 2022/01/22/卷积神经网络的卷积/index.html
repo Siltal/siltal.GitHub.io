@@ -16,22 +16,23 @@
   <meta name="author" content="Siltal">
   <meta name="keywords" content="">
   
-    <meta name="description" content="工具脚本 凯撒密码1234567def caesar_offset(s, i):    if not -25 &lt;&#x3D; i &lt;&#x3D; 25:        return False    origin &#x3D; map(lambda c: chr((ord(c) - 65 + i) % 26 + 65) if 65 &lt;&#x3D; ord(c) &lt;&#x3D; 90    else chr((ord(c)">
+    <meta name="description" content="测试图  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071from PIL import Imageimport matplotlib.pyplot as pltimg &#x3D; Ima">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一次简单的CTF">
-<meta property="og:url" content="http://example.com/2022/01/21/%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84CTF/index.html">
+<meta property="og:title" content="卷积神经网络的卷积">
+<meta property="og:url" content="http://example.com/2022/01/22/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%8D%B7%E7%A7%AF/index.html">
 <meta property="og:site_name" content="Siltal&#39;s Blog">
-<meta property="og:description" content="工具脚本 凯撒密码1234567def caesar_offset(s, i):    if not -25 &lt;&#x3D; i &lt;&#x3D; 25:        return False    origin &#x3D; map(lambda c: chr((ord(c) - 65 + i) % 26 + 65) if 65 &lt;&#x3D; ord(c) &lt;&#x3D; 90    else chr((ord(c)">
+<meta property="og:description" content="测试图  1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071from PIL import Imageimport matplotlib.pyplot as pltimg &#x3D; Ima">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/img/131.png">
-<meta property="article:published_time" content="2022-01-21T00:06:42.000Z">
-<meta property="article:modified_time" content="2022-01-21T12:20:53.860Z">
+<meta property="og:image" content="http://example.com/2022/01/22/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%8D%B7%E7%A7%AF/img/">
+<meta property="article:published_time" content="2022-01-22T10:09:40.000Z">
+<meta property="article:modified_time" content="2022-01-22T10:24:33.773Z">
 <meta property="article:author" content="Siltal">
+<meta property="article:tag" content="图像处理 人工智能 CNN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/131.png">
+<meta name="twitter:image" content="http://example.com/2022/01/22/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%8D%B7%E7%A7%AF/img/">
   
   
-  <title>一次简单的CTF - Siltal&#39;s Blog</title>
+  <title>卷积神经网络的卷积 - Siltal&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -181,7 +182,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="一次简单的CTF">
+            <span class="h2" id="subtitle" title="卷积神经网络的卷积">
               
             </span>
 
@@ -191,8 +192,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-21 08:06" pubdate>
-        January 21, 2022 am
+      <time datetime="2022-01-22 18:09" pubdate>
+        January 22, 2022 pm
       </time>
     </span>
   
@@ -202,7 +203,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2k 字
+      1.4k 字
     </span>
   
 
@@ -211,7 +212,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      17 分钟
+      12 分钟
     </span>
   
 
@@ -240,49 +241,25 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">一次简单的CTF</h1>
+            <h1 style="display: none">卷积神经网络的卷积</h1>
             
             <div class="markdown-body">
-              <h2 id="工具脚本"><a href="#工具脚本" class="headerlink" title="工具脚本"></a>工具脚本</h2><ul>
-<li>凯撒密码<figure class="highlight python"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">caesar_offset</span>(<span class="hljs-params">s, i</span>):</span><br>    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> -<span class="hljs-number">25</span> &lt;= i &lt;= <span class="hljs-number">25</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span><br>    origin = <span class="hljs-built_in">map</span>(<span class="hljs-keyword">lambda</span> c: <span class="hljs-built_in">chr</span>((<span class="hljs-built_in">ord</span>(c) - <span class="hljs-number">65</span> + i) % <span class="hljs-number">26</span> + <span class="hljs-number">65</span>) <span class="hljs-keyword">if</span> <span class="hljs-number">65</span> &lt;= <span class="hljs-built_in">ord</span>(c) &lt;= <span class="hljs-number">90</span><br>    <span class="hljs-keyword">else</span> <span class="hljs-built_in">chr</span>((<span class="hljs-built_in">ord</span>(c) - <span class="hljs-number">97</span> + i) % <span class="hljs-number">26</span> + <span class="hljs-number">97</span>) <span class="hljs-keyword">if</span> <span class="hljs-number">97</span> &lt;= <span class="hljs-built_in">ord</span>(c) &lt;= <span class="hljs-number">122</span><br>    <span class="hljs-keyword">else</span> c, s)<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;&#x27;</span>.join(origin)<br></code></pre></td></tr></table></figure></li>
-<li>base64<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">b64de</span>(<span class="hljs-params">s</span>):</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot; B64 start &quot;</span>.center(<span class="hljs-number">64</span>, <span class="hljs-string">&#x27;-&#x27;</span>))<br>    r = <span class="hljs-string">&quot;&quot;</span><br>    deb64 = base64.b64decode(s)<br>    <span class="hljs-keyword">try</span>:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;try:utf-8 decode&quot;</span>)<br>        <span class="hljs-built_in">print</span>(deb64.decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br>    <span class="hljs-keyword">except</span>:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;\nCantdecode UTF-8&quot;</span>)<br>    <span class="hljs-built_in">print</span>()<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> deb64:<br>        <span class="hljs-built_in">print</span>((<span class="hljs-string">&#x27;%02x&#x27;</span> % i).upper(), end=<span class="hljs-string">&#x27; &#x27;</span>)<br>    <span class="hljs-built_in">print</span>()<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;try:chr decode&quot;</span>)<br><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> deb64:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-built_in">chr</span>(i), end=<span class="hljs-string">&#x27;&#x27;</span>)<br>        r += <span class="hljs-built_in">chr</span>(i)<br>    <span class="hljs-built_in">print</span>()<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot; B64 stop &quot;</span>.center(<span class="hljs-number">64</span>, <span class="hljs-string">&#x27;-&#x27;</span>))<br>    <span class="hljs-keyword">return</span> r<br></code></pre></td></tr></table></figure></li>
-<li>二进制字符串转ASCII<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">binToASCII</span>(<span class="hljs-params">bin_str</span>):</span><br>    bin_str = bin_str.replace(<span class="hljs-string">&#x27;\n&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>).replace(<span class="hljs-string">&#x27; &#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>)<br>    r = <span class="hljs-string">&quot;&quot;</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-built_in">len</span>(bin_str))<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(bin_str) // <span class="hljs-number">8</span>):<br>        byte_str = bin_str[i * <span class="hljs-number">8</span>:i * <span class="hljs-number">8</span> + <span class="hljs-number">8</span>]<br>        r += <span class="hljs-built_in">chr</span>(<span class="hljs-built_in">int</span>(byte_str, <span class="hljs-number">2</span>)) <span class="hljs-keyword">if</span> byte_str != <span class="hljs-string">&#x27;00000000&#x27;</span> <span class="hljs-keyword">else</span> <span class="hljs-string">&#x27;&#x27;</span><br>    <span class="hljs-keyword">return</span> r<br></code></pre></td></tr></table></figure></li>
-<li>黑白图转二进制字符串<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">imgToBin</span>(<span class="hljs-params">path, mode=<span class="hljs-string">&#x27;B0W1&#x27;</span></span>):</span><br>    im = Image.<span class="hljs-built_in">open</span>(path)<br>    im = im.convert(<span class="hljs-string">&quot;1&quot;</span>)<br><br>    bin_str = <span class="hljs-string">&quot;&quot;</span><br>    black, white = (<span class="hljs-string">&#x27;0&#x27;</span>, <span class="hljs-string">&#x27;1&#x27;</span>) <span class="hljs-keyword">if</span> mode == <span class="hljs-string">&#x27;B0W1&#x27;</span> <span class="hljs-keyword">else</span> (<span class="hljs-string">&#x27;1&#x27;</span>, <span class="hljs-string">&#x27;0&#x27;</span>) <span class="hljs-keyword">if</span> mode == <span class="hljs-string">&#x27;B1W0&#x27;</span> <span class="hljs-keyword">else</span> (<span class="hljs-string">&#x27;0&#x27;</span>, <span class="hljs-string">&#x27;0&#x27;</span>)<br>    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(im.size[<span class="hljs-number">1</span>]):<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(im.size[<span class="hljs-number">0</span>]):<br>            <span class="hljs-keyword">if</span> im.getpixel((i, j)) &gt;= <span class="hljs-number">128</span>:<br>                bin_str += white<br>            <span class="hljs-keyword">else</span>:<br>                bin_str += black<br>    <span class="hljs-keyword">return</span> bin_str<br><br></code></pre></td></tr></table></figure></li>
+              <ul>
+<li>测试图<br><img src="./img/" srcset="/img/loading.gif" lazyload></li>
 </ul>
-<h2 id="源"><a href="#源" class="headerlink" title="源"></a>源</h2><p><img src="/img/131.png" srcset="/img/loading.gif" lazyload alt="源"><br>+<br><a target="_blank" rel="noopener" href="http://tools.jb51.net/aideddesign/img_add_info/">图片隐写术</a><br>=</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs txt">hJBCY1PhUCHoSBj6EpFoiJrbSMFuEL5YWAu0VCnMEqdjjfqcCIvbZYyqhYE2Qq0QIqO5SW==<br><br>ks6w!<br></code></pre></td></tr></table></figure>
-
-
-<p>ks6w<br>凯撒+6</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">bDVWS1JbOWBiMVd6YjZicDlvMGZoYF5SQUo0PWhGYkxddzkwWCpvTSskbSY2Kk0KCkI5MQ==<br></code></pre></td></tr></table></figure>
-
-<p>base64 -d 解出</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs txt">l5VKR[9`b1Wzb6bp9o0fh`^RAJ4=hFbL]w90X*oM+$m&amp;6*M<br><br>B91<br></code></pre></td></tr></table></figure>
-
-<p>base91.decode(s)解出</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">https://od.uuu.gay/33.7z  b1Wzb6bp9o0f<br></code></pre></td></tr></table></figure>
-
-<p>下载到文件33.7z 密码b1Wzb6bp9o0f<br>解压出33.wav</p>
-<p>Rot36 decode 出二维码</p>
-<p>扫得</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">l5VKR[9`b1Wzb6bp9o0fh`^R&lt;1&#125;$_YmL/1W&lt;vnhdY%E?hF<br></code></pre></td></tr></table></figure>
-
-<p>base91.decode(s)解出</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">https://od.uuu.gay/321.7z  Sc3885s38z<br></code></pre></td></tr></table></figure>
-
-<p>下载到文件321.7z 密码Sc3885s38z<br>解压出321.png</p>
-<p>扫得</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">kwwsv://bkmi.ff/w/Vf3885v38c<br></code></pre></td></tr></table></figure>
-<p>凯撒+3</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">https://yhjf.cc/t/Sc3885s38z<br></code></pre></td></tr></table></figure>
-
-
-
+<figure class="highlight python"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><br>img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;CNN.png&quot;</span>) <span class="hljs-comment"># 打开为图像对象</span><br>img = img.convert(<span class="hljs-string">&quot;1&quot;</span>) <span class="hljs-comment"># 转灰度图</span><br><br>raw = img.load() <span class="hljs-comment"># 加载图像矩阵</span><br><br>pngV = [[raw[w, h] <span class="hljs-keyword">for</span> w <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(img.size[<span class="hljs-number">1</span>])] <span class="hljs-keyword">for</span> h <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(img.size[<span class="hljs-number">0</span>])] <span class="hljs-comment"># 转为一个宽高相同的二维数组用来存放灰度值</span><br><br>kernel = [  <span class="hljs-comment">#卷积核</span><br>    [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],<br>    [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>],<br>    [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],<br>]<br><br>kernel1 = [ <span class="hljs-comment">#无用的卷积核</span><br>    [<span class="hljs-number">1</span>]<br>]<br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">conv</span>(<span class="hljs-params">v, w, step=<span class="hljs-number">1</span>, pad=<span class="hljs-number">0</span>, fill_value=<span class="hljs-number">1</span>, bias=<span class="hljs-number">0</span></span>):</span><span class="hljs-comment">#卷积过程，参数：灰度矩阵，权重（卷积核），步长，边缘填充，边缘填充的值，偏置</span><br>    v_row = <span class="hljs-built_in">len</span>(v)<br>    v_col = <span class="hljs-built_in">len</span>(v[<span class="hljs-number">0</span>])<br>    <span class="hljs-keyword">if</span> pad:<br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(pad):<span class="hljs-comment">#上边缘填充</span><br>            v.insert(<span class="hljs-number">0</span>, [fill_value <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(v_col + pad * <span class="hljs-number">2</span>)])<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(pad, v_row + pad):<span class="hljs-comment">#中间两侧边缘填充</span><br>            <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(pad):<br>                v[i].insert(<span class="hljs-number">0</span>, fill_value)<br>                v[i].append(fill_value)<br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(pad):<span class="hljs-comment">#下边缘填充</span><br>            v.append([fill_value <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(v_col + pad * <span class="hljs-number">2</span>)])<br>        v_row += pad * <span class="hljs-number">2</span><br>        v_col += pad * <span class="hljs-number">2</span><br><br>    w_row = <span class="hljs-built_in">len</span>(w)<br>    w_col = <span class="hljs-built_in">len</span>(w[<span class="hljs-number">0</span>])<br>    res = []<br>    <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(w_row // <span class="hljs-number">2</span>, v_row - w_row // <span class="hljs-number">2</span>, step):<span class="hljs-comment">#受卷积核宽高的影响需要计算起止位置</span><br>        line = []<br>        <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(w_col // <span class="hljs-number">2</span>, v_col - w_col // <span class="hljs-number">2</span>, step):<br>            temp = <span class="hljs-number">0</span><br>            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(w_row):<br>                <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(w_col):<br>                    t = v[x + i - w_row // <span class="hljs-number">2</span>][y + j - w_col // <span class="hljs-number">2</span>] * w[i][j] <span class="hljs-comment"># 灰度 乘 权重</span><br>                    temp += t <span class="hljs-comment"># 累加乘积</span><br>            temp += bias <span class="hljs-comment"># 加偏置</span><br>            line.append(temp)<br>        res.append(line)<br>    <span class="hljs-keyword">return</span> res<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">relu</span>(<span class="hljs-params">v</span>):</span> <span class="hljs-comment"># 线性整流函数</span><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(v)):<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(v[i])):<br>            v[i][j]=v[i][j] <span class="hljs-keyword">if</span> v[i][j] &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-number">0</span><br>    <span class="hljs-keyword">return</span> v<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">max_pooling</span>(<span class="hljs-params">v,size=<span class="hljs-number">2</span></span>):</span> <span class="hljs-comment"># 最大池化</span><br>    <span class="hljs-keyword">if</span> v%size!=<span class="hljs-number">0</span>:<br>        <span class="hljs-keyword">pass</span><br><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    v = conv(pngV, kernel, step=<span class="hljs-number">9</span>, pad=<span class="hljs-number">0</span>, bias=-<span class="hljs-number">763</span>)<br>    v = relu(v)<br><br>    plt.imshow(v)<br>    plt.show()<br>    plt.imsave(<span class="hljs-string">&quot;2.png&quot;</span>, v)<br><br></code></pre></td></tr></table></figure>
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD-CNN/">图像处理 人工智能 CNN</a>
+                    
+                  </div>
                 
               </div>
               
@@ -297,18 +274,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/01/22/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%8D%B7%E7%A7%AF/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">卷积神经网络的卷积</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/01/20/Hexo-Github-Pages/">
-                        <span class="hidden-mobile">Hexo + Github Pages</span>
+                      <a href="/2022/01/21/%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84CTF/">
+                        <span class="hidden-mobile">一次简单的CTF</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -333,7 +304,7 @@
         var options = Object.assign(
           {"clientID":"dd46baf0acd135016af9","clientSecret":"282de20f0710f518fb76c83d798f610edaf851fc","repo":"siltal.Github.io","owner":"Siltal","admin":["siltal"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: '85dfcc421c4f934993899c3d83419684'
+            id: 'd508c4db3c6817aa8d20521858ac144f'
           }
         )
         var gitalk = new Gitalk(options);
