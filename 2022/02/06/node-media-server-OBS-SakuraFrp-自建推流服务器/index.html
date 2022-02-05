@@ -16,25 +16,20 @@
   <meta name="author" content="Siltal">
   <meta name="keywords" content="">
   
-    <meta name="description" content="测试图  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384import mathfrom PIL import Imageimp">
+    <meta name="description" content="配置 nodejs 环境下载 nodejsYou can download on NodeJs. 配置 nodejs移动到另外一个盘以节省磁盘空间。 安装完成后，执行下面的命令来设置它的全局包位置： 12$ npm config set prefix &quot;D:&#x2F;SDK&#x2F;nodejs&#x2F;npm_global&quot;$ npm config set cache &quot;D:&#x2F;SDK&#x2F;no">
 <meta property="og:type" content="article">
-<meta property="og:title" content="卷积神经网络的卷积">
-<meta property="og:url" content="http://example.com/2022/01/22/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%8D%B7%E7%A7%AF/index.html">
+<meta property="og:title" content="node-media-server + OBS + SakuraFrp 自建推流服务器">
+<meta property="og:url" content="http://example.com/2022/02/06/node-media-server-OBS-SakuraFrp-%E8%87%AA%E5%BB%BA%E6%8E%A8%E6%B5%81%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="Siltal&#39;s Blog">
-<meta property="og:description" content="测试图  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384import mathfrom PIL import Imageimp">
+<meta property="og:description" content="配置 nodejs 环境下载 nodejsYou can download on NodeJs. 配置 nodejs移动到另外一个盘以节省磁盘空间。 安装完成后，执行下面的命令来设置它的全局包位置： 12$ npm config set prefix &quot;D:&#x2F;SDK&#x2F;nodejs&#x2F;npm_global&quot;$ npm config set cache &quot;D:&#x2F;SDK&#x2F;no">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/img/CNN.png">
-<meta property="article:published_time" content="2022-01-22T10:09:40.000Z">
-<meta property="article:modified_time" content="2022-01-22T11:30:28.378Z">
+<meta property="article:published_time" content="2022-02-05T21:55:01.000Z">
+<meta property="article:modified_time" content="2022-02-05T22:20:52.949Z">
 <meta property="article:author" content="Siltal">
-<meta property="article:tag" content="图像处理">
-<meta property="article:tag" content="人工智能">
-<meta property="article:tag" content="CNN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/CNN.png">
   
   
-  <title>卷积神经网络的卷积 - Siltal&#39;s Blog</title>
+  <title>node-media-server + OBS + SakuraFrp 自建推流服务器 - Siltal&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -184,7 +179,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="卷积神经网络的卷积">
+            <span class="h2" id="subtitle" title="node-media-server + OBS + SakuraFrp 自建推流服务器">
               
             </span>
 
@@ -194,8 +189,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-22 18:09" pubdate>
-        January 22, 2022 pm
+      <time datetime="2022-02-06 05:55" pubdate>
+        February 6, 2022 am
       </time>
     </span>
   
@@ -205,7 +200,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.8k 字
+      1.3k 字
     </span>
   
 
@@ -214,7 +209,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      15 分钟
+      12 分钟
     </span>
   
 
@@ -243,36 +238,49 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">卷积神经网络的卷积</h1>
+            <h1 style="display: none">node-media-server + OBS + SakuraFrp 自建推流服务器</h1>
             
             <div class="markdown-body">
-              <ul>
-<li>测试图<br><img src="/img/CNN.png" srcset="/img/loading.gif" lazyload alt="A"></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> math<br><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><br>img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;CNN.png&quot;</span>) <span class="hljs-comment"># 打开为图像对象</span><br>img = img.convert(<span class="hljs-string">&quot;1&quot;</span>) <span class="hljs-comment"># 转灰度图</span><br><br>raw = img.load() <span class="hljs-comment"># 加载图像矩阵</span><br><br>pngV = [[raw[w, h] <span class="hljs-keyword">for</span> w <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(img.size[<span class="hljs-number">1</span>])] <span class="hljs-keyword">for</span> h <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(img.size[<span class="hljs-number">0</span>])] <span class="hljs-comment"># 转为一个宽高相同的二维数组用来存放灰度值</span><br><br>kernel = [  <span class="hljs-comment">#卷积核</span><br>    [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],<br>    [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>],<br>    [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],<br>]<br><br>kernel1 = [ <span class="hljs-comment">#无用的卷积核</span><br>    [<span class="hljs-number">1</span>]<br>]<br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">conv</span>(<span class="hljs-params">v, w, step=<span class="hljs-number">1</span>, pad=<span class="hljs-number">0</span>, fill_value=<span class="hljs-number">1</span>, bias=<span class="hljs-number">0</span></span>):</span><span class="hljs-comment">#卷积过程，参数：灰度矩阵，权重（卷积核），步长，边缘填充，边缘填充的值，偏置</span><br>    v_row = <span class="hljs-built_in">len</span>(v)<br>    v_col = <span class="hljs-built_in">len</span>(v[<span class="hljs-number">0</span>])<br>    <span class="hljs-keyword">if</span> pad:<br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(pad):<span class="hljs-comment">#上边缘填充</span><br>            v.insert(<span class="hljs-number">0</span>, [fill_value <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(v_col + pad * <span class="hljs-number">2</span>)])<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(pad, v_row + pad):<span class="hljs-comment">#中间两侧边缘填充</span><br>            <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(pad):<br>                v[i].insert(<span class="hljs-number">0</span>, fill_value)<br>                v[i].append(fill_value)<br>        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(pad):<span class="hljs-comment">#下边缘填充</span><br>            v.append([fill_value <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(v_col + pad * <span class="hljs-number">2</span>)])<br>        v_row += pad * <span class="hljs-number">2</span><br>        v_col += pad * <span class="hljs-number">2</span><br><br>    w_row = <span class="hljs-built_in">len</span>(w)<br>    w_col = <span class="hljs-built_in">len</span>(w[<span class="hljs-number">0</span>])<br>    res = []<br>    <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(w_row // <span class="hljs-number">2</span>, v_row - w_row // <span class="hljs-number">2</span>, step):<span class="hljs-comment">#受卷积核宽高的影响需要计算起止位置</span><br>        line = []<br>        <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(w_col // <span class="hljs-number">2</span>, v_col - w_col // <span class="hljs-number">2</span>, step):<br>            temp = <span class="hljs-number">0</span><br>            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(w_row):<br>                <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(w_col):<br>                    t = v[x + i - w_row // <span class="hljs-number">2</span>][y + j - w_col // <span class="hljs-number">2</span>] * w[i][j] <span class="hljs-comment"># 灰度 乘 权重</span><br>                    temp += t <span class="hljs-comment"># 累加乘积</span><br>            temp += bias <span class="hljs-comment"># 加偏置</span><br>            line.append(temp)<br>        res.append(line)<br>    <span class="hljs-keyword">return</span> res<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">relu</span>(<span class="hljs-params">v</span>):</span> <span class="hljs-comment"># 线性整流函数</span><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(v)):<br>        <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(v[i])):<br>            v[i][j]=v[i][j] <span class="hljs-keyword">if</span> v[i][j] &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">else</span> <span class="hljs-number">0</span><br>    <span class="hljs-keyword">return</span> v<br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">max_pooling</span>(<span class="hljs-params">v,size=<span class="hljs-number">2</span></span>):</span> <span class="hljs-comment"># 最大池化</span><br>    v_row = math.ceil(<span class="hljs-built_in">len</span>(v) / size)<br>    v_col = math.ceil(<span class="hljs-built_in">len</span>(v[<span class="hljs-number">0</span>]) / size)<br>    r = []<br>    <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(v_row):<br>        line = []<br>        <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(v_col):<br>            compare = []<br>            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(y*size, y*size + size <span class="hljs-keyword">if</span> y*size + size &lt; <span class="hljs-built_in">len</span>(v) <span class="hljs-keyword">else</span> <span class="hljs-built_in">len</span>(v)): <span class="hljs-comment"># 防止边缘越界</span><br>                <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(x*size, x*size + size <span class="hljs-keyword">if</span> x*size+size &lt; <span class="hljs-built_in">len</span>(v) <span class="hljs-keyword">else</span> <span class="hljs-built_in">len</span>(v[<span class="hljs-number">0</span>])):<br>                    compare.append(v[j][i])<br>            line.append(<span class="hljs-built_in">max</span>(compare))<br>        r.append(line)<br>    <span class="hljs-keyword">return</span> r<br><br><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    v = conv(pngV, kernel, step=<span class="hljs-number">9</span>, pad=<span class="hljs-number">0</span>, bias=-<span class="hljs-number">763</span>)<br>    v = relu(v)<br>    v = max_pooling(v)<br>    plt.imshow(v)<br>    plt.show()<br>    plt.imsave(<span class="hljs-string">&quot;2.png&quot;</span>, v)<br><br></code></pre></td></tr></table></figure>
+              <h2 id="配置-nodejs-环境"><a href="#配置-nodejs-环境" class="headerlink" title="配置 nodejs 环境"></a>配置 nodejs 环境</h2><h3 id="下载-nodejs"><a href="#下载-nodejs" class="headerlink" title="下载 nodejs"></a>下载 nodejs</h3><p>You can download on <a target="_blank" rel="noopener" href="https://nodejs.org/en/">NodeJs</a>.</p>
+<h3 id="配置-nodejs"><a href="#配置-nodejs" class="headerlink" title="配置 nodejs"></a>配置 nodejs</h3><p>移动到另外一个盘以节省磁盘空间。</p>
+<p>安装完成后，执行下面的命令来设置它的全局包位置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ npm config <span class="hljs-built_in">set</span> prefix <span class="hljs-string">&quot;D:/SDK/nodejs/npm_global&quot;</span><br>$ npm config <span class="hljs-built_in">set</span> cache <span class="hljs-string">&quot;D:/SDK/nodejs/npm_cache&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>输入下面的命令检查当前的全局包位置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm config ls <br></code></pre></td></tr></table></figure>
+
+<h2 id="运行-node-media-server"><a href="#运行-node-media-server" class="headerlink" title="运行 node-media-server"></a>运行 node-media-server</h2><p>假设你的 node-media-server 要安装到 E:\Tools\node-media-server 目录下，那么你可以这样下载：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> E:\Tools<br>npm install node-media-server<br><br></code></pre></td></tr></table></figure>
+
+<p>然后写入下面的配置文件到app.js：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> NodeMediaServer = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;node-media-server&#x27;</span>);<br><br><span class="hljs-keyword">const</span> config = &#123;<br>  <span class="hljs-attr">rtmp</span>: &#123;<br>    <span class="hljs-attr">port</span>: <span class="hljs-number">1935</span>,<br>    <span class="hljs-attr">chunk_size</span>: <span class="hljs-number">1024</span>,<br>    <span class="hljs-attr">gop_cache</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-attr">ping</span>: <span class="hljs-number">30</span>,<br>    <span class="hljs-attr">ping_timeout</span>: <span class="hljs-number">60</span><br>  &#125;,<br>  <span class="hljs-attr">http</span>: &#123;<br>    <span class="hljs-attr">port</span>: <span class="hljs-number">8000</span>,<br>    <span class="hljs-attr">allow_origin</span>: <span class="hljs-string">&#x27;*&#x27;</span><br>  &#125;,<br>  <span class="hljs-attr">websocket</span>: &#123;<br>    <span class="hljs-attr">port</span>: <span class="hljs-number">8001</span>,<br>    <span class="hljs-attr">allow_origin</span>: <span class="hljs-string">&#x27;*&#x27;</span><br>  &#125;<br>&#125;;<br><br><span class="hljs-keyword">var</span> nms = <span class="hljs-keyword">new</span> NodeMediaServer(config)<br>nms.run();<br><br></code></pre></td></tr></table></figure>
+
+<h3 id="启动-node-media-server"><a href="#启动-node-media-server" class="headerlink" title="启动 node-media-server"></a>启动 node-media-server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> E:\Tools\node-media-server<br>node app.js<br></code></pre></td></tr></table></figure>
+
+<h2 id="使用-OBS-推流"><a href="#使用-OBS-推流" class="headerlink" title="使用 OBS 推流"></a>使用 OBS 推流</h2><p>打开OBS的设置，选择推流选项卡，在服务器中输入<code>rtmp://localhost:1935/live</code>，串流密钥中输入一个直播名称(如index)，然后点击“确定”。<br>则你的拉流(播放端)地址是 <code>rtmp://localhost:1935/live/index</code> ，<br>推流(推送端)地址也是 <code>rtmp://localhost:1935/live/index</code> 。</p>
+<h2 id="配置-SakuraFrp-端口映射"><a href="#配置-SakuraFrp-端口映射" class="headerlink" title="配置 SakuraFrp 端口映射"></a>配置 SakuraFrp 端口映射</h2><p><a target="_blank" rel="noopener" href="https://www.natfrp.com/user/">Sakura Frp 官网</a></p>
+<h3 id="先注册一个账号"><a href="#先注册一个账号" class="headerlink" title="先注册一个账号"></a>先注册一个账号</h3><p>途中需要实名认证需要1元</p>
+<h3 id="新建一个隧道"><a href="#新建一个隧道" class="headerlink" title="新建一个隧道"></a>新建一个隧道</h3><p>点击穿透，选择隧道列表</p>
+<p>穿透节点先选一个普通的，国内的,</p>
+<p>隧道类型选择<code>TCP</code>，</p>
+<p>本地地址可以是默认的，</p>
+<p>端口输入1935 (这是rtmp的端口)，</p>
+<p>其它的可以随意。</p>
+<p>复制这个隧道的配置文件里的用户token</p>
+<h3 id="下载-SakuraFrp"><a href="#下载-SakuraFrp" class="headerlink" title="下载 SakuraFrp"></a>下载 SakuraFrp</h3><p>在<a target="_blank" rel="noopener" href="https://www.natfrp.com/tunnel/download">这里</a>下载</p>
+<p>解压到一个文件夹中，在此文件夹打开终端</p>
+<p>执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">.\frpc.exe -f XXXXXXXXXXXXXXXXXXXXXXX:XXXXXXXXXX<br></code></pre></td></tr></table></figure>
+
+<p>参数是你的token<br>成功后，会在终端中看到提示。</p>
+<h2 id="一些注意事项"><a href="#一些注意事项" class="headerlink" title="一些注意事项"></a>一些注意事项</h2><p>Sakura Frp 默认的带宽是10M，这就需要在OBS中调整码率，否则会出现拉流卡顿、模糊、花屏等问题。</p>
+<p>可以在 <a target="_blank" rel="noopener" href="http://127.0.0.1:8000/admin/">http://127.0.0.1:8000/admin/</a> 查看当前的链接数量（包括推流和拉流）、带宽等信息。</p>
+
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/Python/">Python</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">图像处理</a>
-                    
-                      <a class="hover-with-bg" href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
-                    
-                      <a class="hover-with-bg" href="/tags/CNN/">CNN</a>
-                    
-                  </div>
                 
               </div>
               
@@ -287,18 +295,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/02/02/D/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/01/21/%E4%B8%80%E6%AC%A1%E7%AE%80%E5%8D%95%E7%9A%84CTF/">
-                        <span class="hidden-mobile">一次简单的CTF</span>
+                      <a href="/2022/02/02/D/">
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -323,7 +325,7 @@
         var options = Object.assign(
           {"clientID":"dd46baf0acd135016af9","clientSecret":"282de20f0710f518fb76c83d798f610edaf851fc","repo":"siltal.Github.io","owner":"Siltal","admin":["siltal"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: 'd508c4db3c6817aa8d20521858ac144f'
+            id: '68ef7969b2a0324f78f55bf7d66ec44f'
           }
         )
         var gitalk = new Gitalk(options);
