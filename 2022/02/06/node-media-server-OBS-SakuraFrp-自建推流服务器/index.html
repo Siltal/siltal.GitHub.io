@@ -284,7 +284,7 @@
                 <h2 id="配置-nodejs-环境"><a href="#配置-nodejs-环境" class="headerlink" title="配置 nodejs 环境"></a>配置 nodejs 环境</h2><h3 id="下载-nodejs"><a href="#下载-nodejs" class="headerlink" title="下载 nodejs"></a>下载 nodejs</h3><p>You can download on <a target="_blank" rel="noopener" href="https://nodejs.org/en/">NodeJs</a>.</p>
 <h3 id="配置-nodejs"><a href="#配置-nodejs" class="headerlink" title="配置 nodejs"></a>配置 nodejs</h3><p>移动到另外一个盘以节省磁盘空间。</p>
 <p>安装完成后，执行下面的命令来设置它的全局包位置：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ npm config <span class="hljs-built_in">set</span> prefix <span class="hljs-string">&quot;D:/SDK/nodejs/npm_global&quot;</span><br>$ npm config <span class="hljs-built_in">set</span> cache <span class="hljs-string">&quot;D:/SDK/nodejs/npm_cache&quot;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm config <span class="hljs-built_in">set</span> prefix <span class="hljs-string">&quot;D:/SDK/nodejs/npm_global&quot;</span><br>$ npm config <span class="hljs-built_in">set</span> cache <span class="hljs-string">&quot;D:/SDK/nodejs/npm_cache&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>输入下面的命令检查当前的全局包位置：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm config <span class="hljs-built_in">ls</span> <br></code></pre></td></tr></table></figure>
@@ -422,7 +422,7 @@
       Fluid.utils.createCssLink('/css/gitalk.css')
       Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
         var options = Object.assign(
-          {"clientID":"dd46baf0acd135016af9","clientSecret":"ac49ed9435e1836aea0cd3efbf05311e13fb96a6","repo":"siltal.GitHub.io","owner":"Siltal","admin":"Siltal","language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {"clientID":"dd46baf0acd135016af9","clientSecret":"ac49ed9435e1836aea0cd3efbf05311e13fb96a6","repo":"siltal.GitHub.io","owner":"Siltal","admin":["Siltal"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
             id: '68ef7969b2a0324f78f55bf7d66ec44f'
           }

@@ -282,7 +282,7 @@
 <p>显示时机：安全认证（密码或是pubkey）前</p>
 </blockquote>
 <p><code>Banner</code> 由 <code>sshd_config</code> 配置</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs awk">vim <span class="hljs-regexp">/etc/</span>ssh/sshd_config<br></code></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">vim <span class="hljs-regexp">/etc/</span>ssh/sshd_config<br></code></pre></td></tr></table></figure>
 <p>其中一行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">Banner none<br></code></pre></td></tr></table></figure>
 
@@ -427,7 +427,7 @@
       Fluid.utils.createCssLink('/css/gitalk.css')
       Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
         var options = Object.assign(
-          {"clientID":"dd46baf0acd135016af9","clientSecret":"ac49ed9435e1836aea0cd3efbf05311e13fb96a6","repo":"siltal.GitHub.io","owner":"Siltal","admin":"Siltal","language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {"clientID":"dd46baf0acd135016af9","clientSecret":"ac49ed9435e1836aea0cd3efbf05311e13fb96a6","repo":"siltal.GitHub.io","owner":"Siltal","admin":["Siltal"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
             id: '310c2e86cfd5686f5f2070f2267be3b2'
           }

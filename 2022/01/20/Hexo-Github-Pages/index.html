@@ -287,7 +287,7 @@
 <h2 id="Setup-NodeJS-Environment"><a href="#Setup-NodeJS-Environment" class="headerlink" title="Setup NodeJS Environment"></a>Setup NodeJS Environment</h2><h3 id="Download-NodeJS"><a href="#Download-NodeJS" class="headerlink" title="Download NodeJS"></a>Download NodeJS</h3><p>You can download on <a target="_blank" rel="noopener" href="https://nodejs.org/en/">NodeJs</a>.</p>
 <h3 id="Config-NodeJS"><a href="#Config-NodeJS" class="headerlink" title="Config NodeJS"></a>Config NodeJS</h3><p>Consider disk space, it is necessary to move the <strong>npm package</strong> to another disk.</p>
 <p>Run in terminal (after NodeJS installed)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ npm config <span class="hljs-built_in">set</span> prefix <span class="hljs-string">&quot;D:/SDK/nodejs/npm_global&quot;</span><br>$ npm config <span class="hljs-built_in">set</span> cache <span class="hljs-string">&quot;D:/SDK/nodejs/npm_cache&quot;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm config <span class="hljs-built_in">set</span> prefix <span class="hljs-string">&quot;D:/SDK/nodejs/npm_global&quot;</span><br>$ npm config <span class="hljs-built_in">set</span> cache <span class="hljs-string">&quot;D:/SDK/nodejs/npm_cache&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>You can check the current configuration of npm</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm config <span class="hljs-built_in">ls</span> <br></code></pre></td></tr></table></figure>
@@ -437,7 +437,7 @@
       Fluid.utils.createCssLink('/css/gitalk.css')
       Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
         var options = Object.assign(
-          {"clientID":"dd46baf0acd135016af9","clientSecret":"ac49ed9435e1836aea0cd3efbf05311e13fb96a6","repo":"siltal.GitHub.io","owner":"Siltal","admin":"Siltal","language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {"clientID":"dd46baf0acd135016af9","clientSecret":"ac49ed9435e1836aea0cd3efbf05311e13fb96a6","repo":"siltal.GitHub.io","owner":"Siltal","admin":["Siltal"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
             id: '98b39b2afd14608314e6f9db20bbd3fe'
           }
