@@ -25,11 +25,12 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://siltal.github.io/img/6e7ead8218adc21d0c1d46d578baa964.png">
 <meta property="og:image" content="https://siltal.github.io/img/flag.jpg">
+<meta property="og:image" content="https://siltal.github.io/img/8d7e1a92c9799d5b46ef30be20a08935.png">
 <meta property="og:image" content="https://siltal.github.io/img/64d50e0c56b1cf27081a1a91e18e4731.png">
 <meta property="og:image" content="https://siltal.github.io/img/catsecret.png">
 <meta property="og:image" content="https://siltal.github.io/img/catchpalu.png">
 <meta property="article:published_time" content="2025-05-18T05:23:32.000Z">
-<meta property="article:modified_time" content="2025-05-18T15:26:34.467Z">
+<meta property="article:modified_time" content="2025-05-21T13:10:17.475Z">
 <meta property="article:author" content="Siltal">
 <meta property="article:tag" content="ctf">
 <meta property="article:tag" content="网络安全">
@@ -556,7 +557,7 @@
 <p>经解码后，成功还原出 Flag：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">palu&#123;You_re_a_real_50w&#125;<br></code></pre></td></tr></table></figure>
 
-<h3 id="screenshot"><a href="#screenshot" class="headerlink" title="screenshot"></a>screenshot</h3><p><img src="/img/flag.jpg" srcset="/img/loading.gif" lazyload alt="题目"><br>PS 曲线</p>
+<h3 id="screenshot"><a href="#screenshot" class="headerlink" title="screenshot"></a>screenshot</h3><p><img src="/img/flag.jpg" srcset="/img/loading.gif" lazyload alt="题目"><br>PS 曲线<br><img src="/img/8d7e1a92c9799d5b46ef30be20a08935.png" srcset="/img/loading.gif" lazyload></p>
 <h3 id="几何闪烁的秘密"><a href="#几何闪烁的秘密" class="headerlink" title="几何闪烁的秘密"></a>几何闪烁的秘密</h3><p>圆：cGFsXttcFsdXtcGFdXtt<br>⽅形：YXN0XJfYN0ZXfYXNZXJf<br>三⻆：b2Zf2VvbZfZ2vb2ZZ2Vv<br>五边：bWV0nI9bV0cn9bWVcnI9</p>
 <p>在线gif extractor<br>去除空白帧，直接解码发现不对，然后把不可见字符去掉，再尝试几次得到可读的base64码<br>最终base64：cGFsdXttYXN0ZXJfb2ZfZ2VvbWV0cnl9<br><code>palu&#123;master_of_geometry&#125;</code></p>
 <h3 id="问卷调查"><a href="#问卷调查" class="headerlink" title="问卷调查"></a>问卷调查</h3><blockquote>
@@ -566,7 +567,7 @@
 <p><img src="/img/64d50e0c56b1cf27081a1a91e18e4731.png" srcset="/img/loading.gif" lazyload></p>
 <h3 id="猫猫的秘密"><a href="#猫猫的秘密" class="headerlink" title="猫猫的秘密"></a>猫猫的秘密</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -X GET <span class="hljs-string">&#x27;http://challenge.qsnctf.com:32149/get_secret&#x27;</span> -H <span class="hljs-string">&#x27;Host: challenge.qsnctf.com:32149&#x27;</span> -H <span class="hljs-string">&#x27;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36&#x27;</span> -H <span class="hljs-string">&#x27;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7&#x27;</span> -H <span class="hljs-string">&#x27;Accept-Encoding: gzip, deflate&#x27;</span> -H <span class="hljs-string">&#x27;Cache-Control: max-age=0&#x27;</span> -H <span class="hljs-string">&#x27;DNT: 1&#x27;</span> -H <span class="hljs-string">&#x27;Upgrade-Insecure-Requests: 1&#x27;</span> -H <span class="hljs-string">&#x27;Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7&#x27;</span> -H <span class="hljs-string">&#x27;Authorization: eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIn0.&#x27;</span> -H <span class="hljs-string">&#x27;Cookie: token=1; session=eyJ1c2VyX2lkIjoxMCwidXNlcm5hbWUiOiIyIn0.aCixUQ.HFyXtyBmQiPQCVU-gRK_5aVI75Y; SOLONID=feb8e2661d8f4638bf1a915d4f01048b&#x27;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="/img/catsecret.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/catsecret.png" srcset="/img/loading.gif" lazyload alt="是秘密哟"></p>
 <h3 id="CatNet"><a href="#CatNet" class="headerlink" title="CatNet"></a>CatNet</h3><p>尝试<code>http://127.0.0.1/admin</code><br>发现有GetFlag按钮<br>网页提示refer错误<br>添加请求头X-Forwarded-For: 127.0.0.1<br>进入页面后点击get flag<br>提示</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;error&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Forbidden: Internal endpoint can only be accessed locally&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;your_ip&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;100.64.0.2&quot;</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
 
