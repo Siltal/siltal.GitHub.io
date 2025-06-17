@@ -7,13 +7,16 @@ draft: false
 ---
 
 > 请替换下面 `${domain}` 部分为你的域名
+
 ```bash
 domain = example.com
 password = 114514
 local_port = 443
 
 ```
+
 ## 初始配置
+
 ```bash
 sudo vim /etc/ssh/sshd_config
 PermitRootLogin yes
@@ -23,7 +26,9 @@ sudo passwd user
 sudo passwd root
 
 ```
+
 ## 下载
+
 ```bash
 # 更新系统
 apt update -y && apt upgrade -y
@@ -37,6 +42,7 @@ wget https://github.com/p4gefau1t/trojan-go/releases/download/v0.10.6/trojan-go-
 # 解压
 unzip /opt/trojan-go/trojan-go-linux-amd64.zip -d /opt/trojan-go/
 ```
+
 ## 配置 `acme.sh`
 
 ```bash
@@ -53,8 +59,8 @@ mkdir -p /ssl/$domain/
 # 发布到外部文件夹
 acme.sh --installcert -d $domain --fullchainpath /ssl/$domain/fullchain.crt --keypath /ssl/$domain/privkey.key --ecc --force
 ```
-## 配置 `nginx`
 
+## 配置 `nginx`
 
 ```bash
 cat > /etc/nginx/sites-available/$domain << EOF
@@ -88,6 +94,7 @@ systemctl status nginx
 ```
 
 ## 配置 `trojan-go`
+
 ```bash
 cat > /opt/trojan-go/server.yaml << EOF
 run-type: server
@@ -117,7 +124,9 @@ sed -i "s/\${domain}/$domain/g" /opt/trojan-go/server.yaml
 sed -i "s/\${local_port}/$local_port/g" /opt/trojan-go/server.yaml
 sed -i "s/\${password}/$password/g" /opt/trojan-go/server.yaml
 ```
+
 ## 注册 `trojan-go` 系统服务
+
 ```bash
 cat > /etc/systemd/system/trojan-go.service << EOF
 [Unit]
@@ -152,4 +161,3 @@ trojan://${password}@${domain}:${local_port}#Trojan-Server
 # https://github.com/CareyWang/sub-web
 https://bianyuan.xyz/
 ```
-
