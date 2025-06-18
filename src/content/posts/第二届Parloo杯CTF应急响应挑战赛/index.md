@@ -2,7 +2,7 @@
 title: 第二届Parloo杯CTF应急响应挑战赛
 published: 2025-05-18 
 image: df0fd0ee5e9bd441452f544d6a3b6250.png
-tags: [ctf, NetSecurity, Crypto, python]
+tags: [CTF, NetSecurity, Crypto, python]
 category: NetSecurity
 draft: false
 
